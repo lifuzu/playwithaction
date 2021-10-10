@@ -11,4 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-        echo "Hello ${{ github.event.inputs.param }}!"
+        echo "Hello"
+        echo "${{ github.event.inputs.param }}!"
