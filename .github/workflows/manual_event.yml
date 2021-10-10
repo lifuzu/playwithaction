@@ -2,8 +2,8 @@ name: Manually triggered workflow
 on:
   workflow_dispatch:
     inputs:
-      name:
-        description: 'Welcome person\'s name'
+      param:
+        description: 'Welcome'
         required: true
         default: 'World'
 jobs:
@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-        echo "Hello ${{ github.event.inputs.name }}!"
+        echo "Hello ${{ github.event.inputs.param }}!"
