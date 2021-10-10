@@ -1,4 +1,4 @@
-name: Manually triggered workflow
+name: manually-triggered
 on:
   workflow_dispatch:
     inputs:
@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-      echo "Hello"
-      echo "${{ github.event.inputs.param }}!"
+        echo "Hello"
+        echo "${{ github.event.inputs.param }}!"
