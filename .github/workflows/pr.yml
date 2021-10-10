@@ -1,0 +1,14 @@
+name: PR
+on:
+  - pull_request
+jobs:
+  start_minikube:
+    runs-on: ubuntu-latest
+    name: start_minikube
+    steps:
+    - name: start minikube
+      id: minikube
+      uses: medyagh/setup-minikube@master
+    - name: kubectl
+      run: kubectl get pods -A
+
