@@ -10,6 +10,6 @@ jobs:
   say_hello:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-        echo "Hello"
-        echo "${{ github.event.inputs.param }}!"
+    - run: |
+      echo "Hello"
+      echo "${{ github.event.inputs.param }}!"
